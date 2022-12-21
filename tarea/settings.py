@@ -74,10 +74,16 @@ WSGI_APPLICATION = 'tarea.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#mysql://root:@containers-us-west-180.railway.app:5853/railway
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':'producto.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'ktOJmIhTHGDeKHtF3KwM',
+        'HOST': 'containers-us-west-180.railway.app',
+        'PORT': '5853',
     }
 }
 
